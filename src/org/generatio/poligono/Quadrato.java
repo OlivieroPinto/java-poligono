@@ -16,13 +16,18 @@ public class Quadrato implements Poligono {
 	}
 
 	@Override
-	public void calcolaPerimetro() {
-		System.out.println("Il perimetro é: " + lato * 4);
+	public String calcolaPerimetro() {
+		return "Il perimetro é: " + lato * 4;
 	}
 
 	@Override
-	public void calcolaArea() {
-		System.out.println("l area é: " + lato * lato);
+	public String calcolaArea() {
+		return "l area é: " + (lato * lato);
+	}
+
+	@Override
+	public String toString() {
+		return "Quadrato [calcolaPerimetro()=" + calcolaPerimetro() + ", calcolaArea()=" + calcolaArea() + "]";
 	}
 
 }
