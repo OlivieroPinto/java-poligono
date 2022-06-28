@@ -25,20 +25,15 @@ public class Triangolo implements Poligono {
 	}
 
 	@Override
-	public String calcolaPerimetro() {
-		return "il perimetro del triangolo é: " + (base + lato2 + lato3);
+	public double calcolaPerimetro() {
+		return base + lato2 + lato3;
 
 	}
 
 	@Override
-	public String calcolaArea() {
-		return "l area del triangolo é: " + (base * altezza) / 2;
+	public double calcolaArea() {
+		return (base * altezza) / 2;
 
-	}
-
-	@Override
-	public String toString() {
-		return "Triangolo [calcolaPerimetro()=" + calcolaPerimetro() + ", calcolaArea()=" + calcolaArea() + "]";
 	}
 
 }

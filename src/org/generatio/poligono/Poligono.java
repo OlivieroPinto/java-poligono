@@ -1,7 +1,7 @@
 package org.generatio.poligono;
 
 public interface Poligono {
-	public String calcolaPerimetro();
+	public double calcolaPerimetro();
 
-	public String calcolaArea();
+	public double calcolaArea();
 }
